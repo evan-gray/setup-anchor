@@ -30,7 +30,7 @@ runs:
           ~/.local/share/solana/
         key: solana-cli-${{ runner.os }}-build-${{ inputs.solana-cli-version }}
     - name: Install Solana CLI tools
-      run: sh -c "$(curl -sSfL https://release.solana.com/v${{ inputs.solana-cli-version }}/install)"
+      run: sh -c "$(curl -sSfL https://release.anza.xyz/v${{ inputs.solana-cli-version }}/install)"
       shell: bash
     - name: Update PATH
       run: echo "/home/runner/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH 
